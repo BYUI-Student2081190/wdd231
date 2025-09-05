@@ -1,0 +1,137 @@
+/* COLOR SCHEME */
+/* Coral Blue: #5277F1 */
+/* Coral Pink: #F88379 */
+/* Lighter Black: #171717 */
+/* Charcoal Blue: #36454F */
+:root {
+    --primary-color: #36454F;
+    --secondary-color: #5277F1;
+    --highlight-color: #F88379;
+    --font-color: #171717;
+}
+
+/* SITE-WIDE STYLE */
+* {
+    font-family: "Epunda Slab", serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+    color: var(--primary-color);
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* HAMBURGER NAVIGATION */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+}
+
+/* NAVIGATION */
+.navigation {
+    display: none;
+    border-bottom: 0;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li.active {
+    background-color: #eee;
+}
+
+.navigation a {
+    display: block;
+    padding: 44px 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* MAIN */
+main h1 {
+    margin: 1rem 10px;
+}
+
+/* FOOTER */
+footer {
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.footerContent {
+    background-color: #eee;
+    padding: 0.5rem 0;
+    margin-top: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}

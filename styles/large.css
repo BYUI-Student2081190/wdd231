@@ -1,0 +1,45 @@
+/* LARGE SCREENS */
+@media only screen and (min-width: 38rem) {
+    
+    /* ROOT VARIABLES */
+    :root {
+        --primary-color: #36454F;
+        --secondary-color: #5277F1;
+        --highlight-color: #F88379;
+        --font-color: #171717;
+    }
+
+    /* SITE-WIDE STYLE */
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* HEADER */
+    header {
+        grid-template-columns: 24px auto; /* Gets rid of the button's spot on larger screens */
+    }
+
+    /* HAMBURGER NAVIGATION */
+    .hamburger {
+        display: none;
+    }
+
+    /* NAVIGATION */
+    .navigation {
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border-bottom: 0;
+    }
+
+}
