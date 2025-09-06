@@ -26,7 +26,7 @@
     <header>
         <img src="images/home-logo.svg" alt="Site Logo" width="512" height="512">
         <span>Christopher Scott</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle Nav Button"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
@@ -57,9 +57,9 @@
         <section class="lowerContent">
             <h2>Web Certificate Courses</h2>
             <div class="certificateSelect">
-                <button id="all" class="activeButton">All</button>
-                <button id="cse" class="notActiveButton">CSE</button>
-                <button id="wdd" class="notActiveButton">WDD</button>
+                <button id="all" class="activeButton" aria-label="Show All Certificates Button">All</button>
+                <button id="cse" class="notActiveButton" aria-label="Show Only CSE Certificates Button">CSE</button>
+                <button id="wdd" class="notActiveButton" aria-label="Show Only WDD Certificates Button">WDD</button>
             </div>
             <div id="certifDiv" class="certificateDisplay"></div>
             <p class="creditsdisplay">The total number of credits listed above is <span id="credits"></span></p>
