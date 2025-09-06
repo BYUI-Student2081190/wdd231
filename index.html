@@ -19,6 +19,7 @@
 
     <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,6 +36,32 @@
     </nav>
     <main>
         <h1>Home</h1>
+
+        <div class="upperContent">
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    I am Christopher Scott, I am from Utah.
+                    I like to draw, code, and mess around with music.
+                    I want to learn how to program on the front end and
+                    back end so I can become a full-stack developer one day.
+                </p>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <img src="images/christopher-scott-photo.jpg" alt="Christopher Scott Photo" width="147" height="168">
+            </section>
+        </div>
+
+        <section class="lowerContent">
+            <h2>Web Certificate Courses</h2>
+            <div class="certificateSelect">
+                <button class="activeButton" value="active">All</button>
+                <button value="notActive">CSE</button>
+                <button value="notActive">WDD</button>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="social">
@@ -44,8 +71,8 @@
             <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter-X" width="16" height="16"></a>
         </div>
         <div class="footerContent">
-            <p>Copyright and current year</p>
-            <p>Last Modified</p>
+            <p>&copy; <span id="currentYear"></span> - Christopher Scott - Utah, USA</p>
+            <p>Last Modification: <span id="lastmod"></span></p>
         </div>
     </footer>
 </body>

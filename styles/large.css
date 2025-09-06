@@ -42,4 +42,18 @@
         border-bottom: 0;
     }
 
+    /* MAIN */
+    .upperContent {
+        display: flex;
+        column-gap: 1rem;
+    }
+
+    .upperContent section:nth-child(2) {
+        width: 80%;
+    }
+
+    .upperContent section {
+        margin-bottom: 0;
+    }
+
 }
