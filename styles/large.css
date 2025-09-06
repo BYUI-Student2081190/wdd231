@@ -56,4 +56,13 @@
         margin-bottom: 0;
     }
 
+    .certificateDisplay {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .certificateDisplay p {
+        width: 20%;
+    }
+
 }

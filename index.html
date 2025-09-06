@@ -19,6 +19,7 @@
 
     <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/certificate.js" defer></script>
     <script src="scripts/dates.js" defer></script>
 </head>
 <body>
@@ -56,10 +57,12 @@
         <section class="lowerContent">
             <h2>Web Certificate Courses</h2>
             <div class="certificateSelect">
-                <button class="activeButton" value="active">All</button>
-                <button value="notActive">CSE</button>
-                <button value="notActive">WDD</button>
+                <button id="all" class="activeButton">All</button>
+                <button id="cse" class="notActiveButton">CSE</button>
+                <button id="wdd" class="notActiveButton">WDD</button>
             </div>
+            <div id="certifDiv" class="certificateDisplay"></div>
+            <p class="creditsdisplay">The total number of credits listed above is <span id="credits"></span></p>
         </section>
 
     </main>
