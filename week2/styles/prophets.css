@@ -1,0 +1,60 @@
+/* WHOLE PAGE */
+:root {
+    --div-bg-color: #e6e6ea;
+    --header-text-color: #673147;
+    --text-color: #13090d;
+}
+
+h1,
+h2 {
+    font-family: "Merriweather", serif;
+    color: var(--header-text-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+* {
+    font-family: "Epunda Slab", serif;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin: 2rem 20px;
+}
+
+/* MAIN */
+main {
+    margin: 2rem 20px;
+}
+
+#cards {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+#cards section {
+    text-align: center;
+    background-color: var(--div-bg-color);
+    border: 1px solid var(--text-color);
+    padding: 1rem 1rem;
+}
+
+#cards img {
+    width: 100%;
+    height: auto;
+    max-width: 340px;
+    border: 1px solid var(--text-color);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin: 2rem 20px;
+    font-size: large;
+    color: var(--header-text-color);
+}
