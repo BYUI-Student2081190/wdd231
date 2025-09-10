@@ -4,7 +4,7 @@
         {
             "name": "Test",
             "address": "Test",
-            "phonenumber": "Test",
+            "phone": "Test",
             "url": "www.test.test",
             "image": "Test",
             "membershiplevel": 1,
@@ -14,7 +14,7 @@
         {
             "name": "Test",
             "address": "Test",
-            "phonenumber": "Test",
+            "phone": "Test",
             "url": "www.test.test",
             "image": "Test",
             "membershiplevel": 1,
