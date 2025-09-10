@@ -1,0 +1,24 @@
+{
+    "members":
+    [
+        {
+            "name": "Test",
+            "address": "Test",
+            "phonenumber": "Test",
+            "url": "www.test.test",
+            "image": "Test",
+            "membershiplevel": 1,
+            "isactive": true
+        },
+
+        {
+            "name": "Test",
+            "address": "Test",
+            "phonenumber": "Test",
+            "url": "www.test.test",
+            "image": "Test",
+            "membershiplevel": 1,
+            "isactive": true
+        }
+    ]
+}
