@@ -2,21 +2,71 @@
     "members":
     [
         {
-            "name": "Test",
-            "address": "Test",
-            "phone": "Test",
-            "url": "www.test.test",
-            "image": "Test",
+            "name": "Terry's Donuts",
+            "address": "1220 West Jordan Way, West Jordan UT 8002",
+            "phone": "(801) 111-1111",
+            "url": "https://www.terrydonuts.com/",
+            "image": "images/terrys-donuts.jpg",
+            "membershiplevel": 3,
+            "isactive": true
+        },
+
+        {
+            "name": "Smiles Movie Theater",
+            "address": "1222 West Jordan Way, West Jordan UT 8002",
+            "phone": "(801) 121-1212",
+            "url": "https://www.smilesmovies.com/",
+            "image": "images/smiles-movie-theater.jpg",
+            "membershiplevel": 2,
+            "isactive": true
+        },
+
+        {
+            "name": "Sarah Beetly Hair Salon",
+            "address": "1323 West Jordan Court, West Jordan UT 8002",
+            "phone": "(801) 321-3221",
+            "url": "https://sarahbhair.com/",
+            "image": "images/sarah-beetly-hair-salon.jpg",
+            "membershiplevel": 3,
+            "isactive": true
+        },
+
+        {
+            "name": "Mary's Fashion",
+            "address": "1432 West Jordan Court, West Jordan UT 8002",
+            "phone": "(801) 444-4444",
+            "url": "https://marysfashion.com/",
+            "image": "images/marys-fashion.jpg",
             "membershiplevel": 1,
             "isactive": true
         },
 
         {
-            "name": "Test",
-            "address": "Test",
-            "phone": "Test",
-            "url": "www.test.test",
-            "image": "Test",
+            "name": "Magical Book Store",
+            "address": "1567 West Jordan Park View, West Jordan UT 8002",
+            "phone": "(801) 888-8888",
+            "url": "https://magicalbookstore.com/",
+            "image": "images/magical-book-store.jpg",
+            "membershiplevel": 3,
+            "isactive": true
+        },
+
+        {
+            "name": "Konner's Insurance",
+            "address": "2314 West Jordan Park View, West Jordan UT 8002",
+            "phone": "(801) 541-4433",
+            "url": "https://konnersinsurance.com/",
+            "image": "images/konners-insurance.jpg",
+            "membershiplevel": 3,
+            "isactive": true
+        },
+
+        {
+            "name": "Golden Fitness",
+            "address": "3214 West Jordan Park View, West Jordan UT 8002",
+            "phone": "(801) 999-9999",
+            "url": "https://goldenfitnessgymandclub.com/",
+            "image": "images/golden-fitness.jpg",
             "membershiplevel": 1,
             "isactive": true
         }
