@@ -94,6 +94,10 @@ main {
     margin: 2rem 10px;
 }
 
+main h1 {
+    text-align: center;
+}
+
 /* DIRECTORY MAIN STYLE */
 .dirUpperSection {
     display: flex;
