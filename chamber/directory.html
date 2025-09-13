@@ -19,12 +19,12 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Merriweather:opsz@18..144&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Merriweather:opsz@18..144&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="styles/base.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="styles/large.css">
     
     <!-- JavaScript Links -->
     <script src="scripts/navigation.js" defer></script>
@@ -35,7 +35,7 @@
     <header>
 
         <section>
-            <a href="#"><img src="images/chamber-icon.svg" alt="West Jordan Commerce Icon" width="40" height="40"></a>
+            <a href="#"><img src="images/chamber-icon.svg" alt="West Jordan Commerce Icon" width="45" height="45"></a>
             <h1>West Jordan Chamber of Commerce</h1>
             <button id="ham-btn" class="hamburger" aria-label="Toggle Nav Button"></button>
         </section>
@@ -66,7 +66,7 @@
             <button id="listButton" aria-label="Toggle List View Button"><img src="images/list-display.svg" alt="List Display" width="16" height="16"></button>
         </section>
 
-        <section class="dirBottomSection">
+        <section>
             <div id="dirContainer"></div>
         </section>
 
@@ -82,16 +82,16 @@
             <p>(407) 760-5923</p>
         </section>
 
-        <section>
-            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
-            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter X" width="16" height="16"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="YouTube" width="16" height="16"></a>
+        <section class="socialIcons">
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="22" height="22"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter X" width="22" height="22"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="YouTube" width="22" height="22"></a>
         </section>
 
         <section>
             <p>WDD231 Class Project</p>
             <p>Christopher Scott</p>
-            <p>&copy; <span id="currentYear"></span> West Jordan Chamber of Commerce</p>
+            <p>&copy; <span id="currentYear">2025</span> West Jordan Chamber of Commerce</p>
             <p>Last Modification: <span id="lastModDate"></span></p>
         </section>
 

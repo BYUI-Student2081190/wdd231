@@ -48,6 +48,7 @@ function displayGridMembers(members) {
             img.setAttribute("alt", member.name);
             img.setAttribute("width", 300);
             img.setAttribute("height", 300);
+            img.setAttribute("fetchpriority", "high");
 
             card.classList.add("gridMember");
             card.appendChild(img);
@@ -57,6 +58,9 @@ function displayGridMembers(members) {
             card.appendChild(memberUrl);
 
             container.appendChild(card);
+            // Update the container class list
+            container.classList.remove("list");
+            container.classList.add("grid");
         });
     } else {
         const card = document.createElement("div");
@@ -76,8 +80,10 @@ function displayListMembers(members) {
 
     // Check to see if an error happened, members must come in populated
     if (members && members.length > 0) {
+        // Create a table to hold the list elements
+        const ul = document.createElement("ul");
         members.forEach((member) => {
-            const card = document.createElement("div");
+            const card = document.createElement("li");
             const name = document.createElement("p");
             const address = document.createElement("p");
             const phone = document.createElement("p");
@@ -95,8 +101,13 @@ function displayListMembers(members) {
             card.appendChild(phone);
             card.appendChild(memberUrl);
 
-            container.appendChild(card);
+            ul.appendChild(card);
+            // Update the container class list
+            container.classList.add("list");
+            container.classList.remove("grid");
         });
+
+        container.appendChild(ul);
     } else {
         const card = document.createElement("div");
         const errorMessage = document.createElement("p");
