@@ -31,8 +31,10 @@ header section {
     column-gap: 1rem;
 }
 
-header section h1 {
+header section span {
+    font-family: "Merriweather", serif;
     color: var(--text-color);
+    font-size: 2rem;
 }
 
 .hamburger {
