@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>West Jordan Chamber of Commerce - Directory - WDD231 - Christopher Scott</title>
-    <meta name="description" content="Welcome to the Directory! Discover local business and business owners around West Jordan and see what services they can provide you.">
+    <title>West Jordan Chamber of Commerce - Home - WDD231 - Christopher Scott</title>
+    <meta name="description" content="Welcome to the West Jordan Chamber of Commerce! Get updated on all the companies who participate in the chamber, and locate local buisnesses in your area.">
     <meta name="author" content="Christopher Scott">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="West Jordan Chamber of Commerce - Directory - WDD231 - Christopher Scott">
-    <meta property="og:description" content="Welcome to the Directory! Discover local business and business owners around West Jordan and see what services they can provide you.">
+    <meta property="og:title" content="West Jordan Chamber of Commerce - Home - WDD231 - Christopher Scott">
+    <meta property="og:description" content="Welcome to the West Jordan Chamber of Commerce! Get updated on all the companies who participate in the chamber, and locate local buisnesses in your area.">
     <meta property="og:image" content="https://byui-student2081190.github.io/wdd231/chamber/images/facebook-river.webp">
-    <meta property="og:url" content="https://byui-student2081190.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://byui-student2081190.github.io/wdd231/chamber/index.html">
 
     <!-- Favicon -->
     <link rel="icon" href="images/chamber-favicon.ico">
@@ -29,7 +29,7 @@
     <!-- JavaScript Links -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,10 +43,10 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a class="active" href="index.html">Home</a>
                 </li>
                 <li>
-                    <a class="active" href="directory.html">Directory</a>
+                    <a href="directory.html">Directory</a>
                 </li>
                 <li>
                     <a href="#">Join</a>
@@ -61,15 +61,26 @@
 
     <main>
 
-        <h1>West Jordan Chamber of Commerce Directory</h1>
-
-        <section class="dirUpperSection">
-            <button id="gridButton" class="buttonActive" aria-label="Toggle Grid View Button"><img src="images/grid-display.svg" alt="Grid Display" width="16" height="16"></button>
-            <button id="listButton" aria-label="Toggle List View Button"><img src="images/list-display.svg" alt="List Display" width="16" height="16"></button>
+        <section class="homeCallToAction">
+            <!-- The Call to Action must be placed over the Hero Image -->
+            <img src="images/river.webp" alt="Chamber Home River" width="900" height="600">
+            <a href="#">Join the Chamber</a>
         </section>
 
-        <section>
-            <div id="dirContainer"></div>
+        <h1>West Jordan Chamber of Commerce Home</h1>
+
+        <section class="homeTop">
+            
+            <div>
+                <h2>Events</h2>
+            </div>
+
+            <div id="currWeather"></div>
+
+        </section>
+
+        <section class="homeMid">
+            <div id="homeContainer"></div>
         </section>
 
     </main>
