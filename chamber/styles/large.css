@@ -44,6 +44,15 @@
         background-color: var(--primary-color);
     }
 
+    /* HOME MAIN STYLE */
+    .homeTop {
+        flex-direction: row;
+    }
+
+    .homeMid {
+        flex-direction: row;
+    }
+
     /* DIRECTORY MAIN STYLE */
     .listMember p,
     .listMember a {

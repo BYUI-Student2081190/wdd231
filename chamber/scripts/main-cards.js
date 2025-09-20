@@ -73,6 +73,7 @@ function displayCards() {
             const card = document.createElement('div');
             const top = document.createElement('div');
             const bottom = document.createElement('div');
+            const info = document.createElement('div');
             const name = document.createElement('h2');
             const email = document.createElement('p');
             const phone = document.createElement('p');
@@ -93,15 +94,17 @@ function displayCards() {
             img.setAttribute("alt", member.name);
             img.setAttribute("width", 300);
             img.setAttribute("height", 300);
+            img.setAttribute("loading", "lazy");
             img.setAttribute("fetchpriority", "high");
 
             // Add them to the right divs
             top.appendChild(name);
 
             bottom.appendChild(img);
-            bottom.appendChild(email);
-            bottom.appendChild(phone);
-            bottom.appendChild(url);
+            info.appendChild(email);
+            info.appendChild(phone);
+            info.appendChild(url);
+            bottom.appendChild(info);
 
             card.appendChild(top);
             card.appendChild(bottom);

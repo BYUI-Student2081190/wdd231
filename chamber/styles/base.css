@@ -98,6 +98,141 @@ main {
 
 main h1 {
     text-align: center;
+    margin: 2.5rem 0;
+}
+
+/* HOME MAIN STYLE */
+.homeCallToAction {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: end;
+}
+
+.homeCallToAction img {
+    display: block;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    border: 1px solid var(--text-color);
+}
+
+.homeCallToAction a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    bottom: 3rem;
+    text-decoration: none;
+    padding: 0.8rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 5rem;
+}
+
+.homeCallToAction a:hover {
+    background-color: var(--secondary-color);
+}
+
+.homeCallToAction img,
+.homeCallToAction a {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.homeTop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 20px;
+    row-gap: 2rem;
+    margin: 2rem 0;
+}
+
+.homeTop > div {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--text-color);
+}
+
+.homeTop h2 {
+    padding: 1rem;
+    margin-top: 0;
+    border-bottom: 1px solid var(--text-color);
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+}
+
+.homeTop ul {
+    padding: 0;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.weatherDiv h2 {
+    margin-bottom: 0;
+}
+
+.weatherBottom {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.weatherBottom p {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.weatherBottom img {
+    width: 100%;
+    height: auto;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.weatherDes {
+    text-transform: capitalize;
+}
+
+.homeMid {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    row-gap: 2rem;
+}
+
+.spotlight {
+    border: 1px solid var(--text-color);
+    border-radius: 0.5rem;
+    background-color: var(--secondary-color);
+}
+
+.spotlight .top h2 {
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.spotlight .bottom img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 10px;
+}
+
+.spotlight .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spotlight .bottom p {
+    word-break: break-all;
+    margin-right: 10px;
 }
 
 /* DIRECTORY MAIN STYLE */
