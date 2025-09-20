@@ -8,7 +8,8 @@
             "url": "https://www.terrydonuts.com/",
             "image": "images/terrys-donuts.jpg",
             "membershiplevel": 3,
-            "isactive": true
+            "isactive": true,
+            "email": "terrydonuts@fakeemail.com"
         },
 
         {
@@ -18,7 +19,8 @@
             "url": "https://www.smilesmovies.com/",
             "image": "images/smiles-movie-theater.jpg",
             "membershiplevel": 2,
-            "isactive": true
+            "isactive": true,
+            "email": "smilesmt@fakeemail.com"
         },
 
         {
@@ -28,7 +30,8 @@
             "url": "https://sarahbhair.com/",
             "image": "images/sarah-beetly-hair-salon.jpg",
             "membershiplevel": 3,
-            "isactive": true
+            "isactive": true,
+            "email": "sarahbeetlyhair@fakeemail.com"
         },
 
         {
@@ -38,7 +41,8 @@
             "url": "https://marysfashion.com/",
             "image": "images/marys-fashion.jpg",
             "membershiplevel": 1,
-            "isactive": true
+            "isactive": true,
+            "email": "marysfashion@fakeemail.com"
         },
 
         {
@@ -48,7 +52,8 @@
             "url": "https://magicalbookstore.com/",
             "image": "images/magical-book-store.jpg",
             "membershiplevel": 3,
-            "isactive": true
+            "isactive": true,
+            "email": "magicalbookstore@fakeemail.com"
         },
 
         {
@@ -58,7 +63,8 @@
             "url": "https://konnersinsurance.com/",
             "image": "images/konners-insurance.jpg",
             "membershiplevel": 3,
-            "isactive": true
+            "isactive": true,
+            "email": "konnersinsurance@fakeemail.com"
         },
 
         {
@@ -68,7 +74,8 @@
             "url": "https://goldenfitnessgymandclub.com/",
             "image": "images/golden-fitness.jpg",
             "membershiplevel": 1,
-            "isactive": true
+            "isactive": true,
+            "email": "goldenfitness@fakeemail.com"
         }
     ]
 }
