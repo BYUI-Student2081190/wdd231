@@ -1,28 +1,13 @@
+// Import the function from data
+import { getData } from "./data.mjs";
+
+// Get the data from getDaata
+const data = await getData();
+
 // Get the DOM elements
 const container = document.getElementById("dirContainer");
 const gridButton = document.getElementById("gridButton");
 const listButton = document.getElementById("listButton");
-const url = 'https://byui-student2081190.github.io/wdd231/chamber/data/data.json';
-
-// Function to get the data from the api
-async function getData(option) {
-    try
-    {
-        // Give us the data
-        const response = await fetch(url);
-        const data = await response.json();
-        // Set the members to be grid or list based on if option is 1 or 2
-        if (option === 1)
-        {
-            displayGridMembers(data.members); 
-        } else {
-            displayListMembers(data.members);
-        };
-    } catch {
-        // Default to null so the next part will let us know of the error
-        members = null;
-    }
-};
 
 // Now create the display functions
 function displayGridMembers(members) {
@@ -121,19 +106,19 @@ function displayListMembers(members) {
 };
 
 // Call this funtion first
-getData(1);
+displayGridMembers(data.members);
 
 // Now create the click events
 gridButton.addEventListener("click", () => {
     gridButton.classList.add("buttonActive");
     listButton.classList.remove("buttonActive");
     // Call get data
-    getData(1);
+    displayGridMembers(data.members);
 });
 
 listButton.addEventListener("click", () => {
     gridButton.classList.remove("buttonActive");
     listButton.classList.add("buttonActive");
     // Call get data
-    getData(2);
+    displayListMembers(data.members);
 });
