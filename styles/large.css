@@ -18,6 +18,11 @@
         margin: 0 auto;
     }
 
+    /* DIALOG STYLES */
+    dialog h1 {
+        text-align: center;
+    }
+
     /* HEADER */
     header {
         grid-template-columns: 24px auto; /* Gets rid of the button's spot on larger screens */

@@ -4,6 +4,7 @@ const creditsSpan = document.getElementById("credits");
 const allButton = document.getElementById("all");
 const cseButton = document.getElementById("cse");
 const wddButton = document.getElementById("wdd");
+const courseDetails = document.getElementById("course-details");
 
 // Certificate list
 const courses = [
@@ -158,3 +159,63 @@ wddButton.addEventListener("click", () => {
 
 // Call the all list first
 displayCertificates(courses);
+
+// Function to display the data
+function displayDialog(element) {
+    // Obtain the data from the object array
+    const courseData = courses.find(course => element.textContent.includes(course.subject) && element.textContent.includes(course.number));
+    
+    // Now populate the data in the dialog box
+    const header = document.createElement("h1");
+    const closeButton = document.createElement("button");
+    const courseTitle = document.createElement("h2");
+    const credits = document.createElement("p");
+    const certificate = document.createElement("p");
+    const description = document.createElement("p");
+    const technology = document.createElement("p");
+
+    // Add the information to the elements
+    header.textContent = `${courseData.subject} ${courseData.number}`;
+    closeButton.textContent = "X";
+    courseTitle.textContent = courseData.title;
+    credits.textContent = `${courseData.credits} credits`;
+    certificate.textContent = `Cerificate: ${courseData.certificate}`;
+    description.textContent = courseData.description;
+    technology.textContent = `Technology: ${courseData.technology.join(', ')}`;
+
+    // Add some more data to the closeButton
+    closeButton.setAttribute("aria-label", "Close Course Information");
+    closeButton.addEventListener("click", () => {
+        // Close the modal
+        courseDetails.close();
+        // Delete the current data in the modal
+        courseDetails.replaceChildren(); // Because when this closes we are not using it anymore
+    });
+
+    // Add the current data
+    courseDetails.appendChild(header);
+    courseDetails.appendChild(closeButton);
+    courseDetails.appendChild(courseTitle);
+    courseDetails.appendChild(credits);
+    courseDetails.appendChild(certificate);
+    courseDetails.appendChild(description);
+    courseDetails.appendChild(technology);
+};
+
+// Click event on the div, this will also help open the dialog box
+certifContainer.addEventListener("click", (event) => {
+    // Learned how to do all this through some research
+    // Get the clicked element inside the div
+    const clicked = event.target;
+
+    // Check to see if the element was a p tag in the div
+    if (clicked.tagName === 'P') {
+        // Now check if it actually is a child of the parent
+        if (certifContainer.contains(clicked)) {
+            // Send the clicked element over to the display function to start obtaining data
+            displayDialog(clicked);
+            // Open the modal
+            courseDetails.showModal();
+        };
+    };
+});

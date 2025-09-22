@@ -32,6 +32,56 @@ p {
     color: var(--font-color);
 }
 
+/* MODAL STYLES */
+dialog {
+    border: 1px solid var(--font-color);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog h1 {
+    text-align: left;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+dialog h2 {
+    background-color: #fff;
+    color: var(--font-color);
+    font-size: 1rem;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    color: #fff;
+    cursor: pointer;
+    font-size: x-large;
+    border: 1px solid var(--font-color);
+    border-radius: 0.20rem;
+    background-color: var(--primary-color);
+}
+
+dialog button:hover {
+    background-color: #fff;
+    color: var(--font-color);
+}
+
+dialog p {
+    margin: 1.5rem 0;
+}
+
 /* HEADER */
 header {
     display: grid;
@@ -196,6 +246,7 @@ main h2 {
     border-radius: 0.5rem;
     width: 100%;
     text-align: center;
+    cursor: pointer;
 }
 
 .certificateDisplay p.completed {
