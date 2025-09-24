@@ -29,8 +29,6 @@
     <!-- JavaScript Links -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script type="module" src="scripts/main-cards.js"></script>
 </head>
 <body>
     <header>
@@ -44,13 +42,13 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li>
-                    <a class="active" href="index.html">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="directory.html">Directory</a>
                 </li>
                 <li>
-                    <a href="#">Join</a>
+                    <a class="active" href="join.html">Join</a>
                 </li>
                 <li>
                     <a href="#">Discover</a>
@@ -61,6 +59,41 @@
     </header>
 
     <main>
+
+        <h1>Join the Chamber</h1>
+
+        <form class="joinForm" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="firstName">First Name: 
+                    <input name="firstName" id="firstName" type="text" title="Enter your first name. Example: Sarah" autocomplete="given-name" required>
+                </label>
+                <label for="lastName">Last Name: 
+                    <input name="lastName" id="lastName" type="text" title="Enter your last name. Example: Brown" autocomplete="family-name" required>
+                </label>
+                <label for="orgTitle">Organizational Title: 
+                    <input name="orgTitle" id="orgTitle" type="text" title="Enter your organizational title. Example: Finance-Manager" autocomplete="organization-title" pattern="^[a-zA-Z\\-\\s]{7,}$" required>
+                </label>
+                <p class="formNote">(Please only use alpha characters (a-z, A-Z), hyphens, and 7 spaces for Organizational Title.)</p>
+                <label for="email">Email: 
+                    <input name="email" id="email" type="email" title="Enter your email. Example: sarahbrown@email.com" autocomplete="email" required>
+                </label>
+                <label for="phoneNum">Mobile Phone: 
+                    <input name="phoneNum" id="phoneNum" type="tel" title="Enter your mobile phone number. Example: 999-999-9999" autocomplete="mobile" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Organization Information</legend>
+                <label for="orgName">Buisness/Organization Name: 
+                    <input name="orgName" id="orgName" type="text" title="Enter the name of your buisness or organization. Example: The Example Buisness" autocomplete="organization-title" required>
+                </label>
+                <div class="membership">
+                    <div class="membershipDisplay"></div>
+                    <p>Select a Membership:</p>
+                </div>
+            </fieldset>
+        </form>
+        
     </main>
 
     <footer>

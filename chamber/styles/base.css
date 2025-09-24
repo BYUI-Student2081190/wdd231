@@ -123,7 +123,7 @@ main h1 {
     display: block;
     position: relative;
     z-index: 1;
-    bottom: 3rem;
+    bottom: 10%;
     text-decoration: none;
     padding: 0.8rem;
     background-color: var(--primary-color);
