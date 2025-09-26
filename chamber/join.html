@@ -29,64 +29,9 @@
     <!-- JavaScript Links -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/joinForm.js" defer></script>
+    <script src="scripts/join-form.js" defer></script>
 </head>
 <body>
-    <!-- Modals Spot -->
-     <dialog id="noMemModal" class="joinModal">
-        <h1>No Membership</h1>
-        <button id="noMemMoClose" type="button" aria-label="Close Modal Button">X</button>
-        <h2>Price:</h2>
-        <p>No Charge it's Free</p>
-        <h2>Benefits:</h2>
-        <ul>
-            <li>Buisness or Organization is part of the Chamber</li>
-            <li>Buisness or Organization can advertise at Chamber hosted events with a fee</li>
-        </ul>
-     </dialog>
-     <dialog id="broMemModal" class="joinModal">
-        <h1>Bronze Membership</h1>
-        <button id="broMemMoClose" type="button" aria-label="Close Modal Button">X</button>
-        <h2>Price:</h2>
-        <p>$20 a month</p>
-        <h2>Benefits:</h2>
-        <ul>
-            <li>Buisness or Organization is part of the Chamber</li>
-            <li>Buisness or Organization can advertise at Chamber hosted events with a fee</li>
-            <li>Participate in Chamber trainings for buisnesses and organizations</li>
-            <li>Get 10% discount on advertisements at Chamber hosted events</li>
-        </ul>
-     </dialog>
-     <dialog id="silMemModal" class="joinModal">
-        <h1>Silver Membership</h1>
-        <button id="silMemMoClose" type="button" aria-label="Close Modal Button">X</button>
-        <h2>Price:</h2>
-        <p>$40 a month</p>
-        <h2>Benefits:</h2>
-        <ul>
-            <li>Buisness or Organization is part of the Chamber</li>
-            <li>Buisness or Organization can advertise at Chamber hosted events with a fee</li>
-            <li>Participate in Chamber trainings for buisnesses and organizations</li>
-            <li>Get 20% discount on advertisements at Chamber hosted events</li>
-            <li>Buisness or Oranization gets free advertisements on Chamber site</li>
-            <li>Buisness or Organization can host their own trainings or events at Chamber Event Plaza</li>
-        </ul>
-     </dialog>
-     <dialog id="golMemModal" class="joinModal">
-        <h1>Gold Membership</h1>
-        <button id="golMemMoClose" type="button" aria-label="Close Modal Button">X</button>
-        <h2>Price:</h2>
-        <p>$60 a month</p>
-        <h2>Benefits:</h2>
-        <ul>
-            <li>Buisness or Organization is part of the Chamber</li>
-            <li>Buisness or Organization can advertise at Chamber hosted events for free</li>
-            <li>Participate in Chamber trainings for buisnesses and organizations</li>
-            <li>Buisness or Oranization gets free advertisements on Chamber site</li>
-            <li>Buisness or Organization can host their own trainings or events at Chamber Event Plaza</li>
-            <li>Buisness or Organization can recieve a monthly training crafted for the buisness/organization from the Chamber</li>
-        </ul>
-     </dialog>
 
     <header>
 
@@ -118,6 +63,62 @@
     <main>
 
         <h1>Join the Chamber</h1>
+
+        <!-- Modals Spot -->
+        <dialog id="noMemModal" class="joinModal">
+            <h2>No Membership</h2>
+            <button id="noMemMoClose" type="button" aria-label="Close Modal Button">X</button>
+            <h2>Price:</h2>
+            <p>No Charge it's Free</p>
+            <h2>Benefits:</h2>
+            <ul>
+                <li>Buisness or Organization is part of the Chamber</li>
+                <li>Buisness or Organization can advertise at Chamber hosted events with a fee</li>
+            </ul>
+        </dialog>
+        <dialog id="broMemModal" class="joinModal">
+            <h2>Bronze Membership</h2>
+            <button id="broMemMoClose" type="button" aria-label="Close Modal Button">X</button>
+            <h2>Price:</h2>
+            <p>$20 a month</p>
+            <h2>Benefits:</h2>
+            <ul>
+                <li>Buisness or Organization is part of the Chamber</li>
+                <li>Buisness or Organization can advertise at Chamber hosted events with a fee</li>
+                <li>Participate in Chamber trainings for buisnesses and organizations</li>
+                <li>Get 10% discount on advertisements at Chamber hosted events</li>
+            </ul>
+        </dialog>
+        <dialog id="silMemModal" class="joinModal">
+            <h2>Silver Membership</h2>
+            <button id="silMemMoClose" type="button" aria-label="Close Modal Button">X</button>
+            <h2>Price:</h2>
+            <p>$40 a month</p>
+            <h2>Benefits:</h2>
+            <ul>
+                <li>Buisness or Organization is part of the Chamber</li>
+                <li>Buisness or Organization can advertise at Chamber hosted events with a fee</li>
+                <li>Participate in Chamber trainings for buisnesses and organizations</li>
+                <li>Get 20% discount on advertisements at Chamber hosted events</li>
+                <li>Buisness or Oranization gets free advertisements on Chamber site</li>
+                <li>Buisness or Organization can host their own trainings or events at Chamber Event Plaza</li>
+            </ul>
+        </dialog>
+        <dialog id="golMemModal" class="joinModal">
+            <h2>Gold Membership</h2>
+            <button id="golMemMoClose" type="button" aria-label="Close Modal Button">X</button>
+            <h2>Price:</h2>
+            <p>$60 a month</p>
+            <h2>Benefits:</h2>
+            <ul>
+                <li>Buisness or Organization is part of the Chamber</li>
+                <li>Buisness or Organization can advertise at Chamber hosted events for free</li>
+                <li>Participate in Chamber trainings for buisnesses and organizations</li>
+                <li>Buisness or Oranization gets free advertisements on Chamber site</li>
+                <li>Buisness or Organization can host their own trainings or events at Chamber Event Plaza</li>
+                <li>Buisness or Organization can recieve a monthly training crafted for the buisness/organization from the Chamber</li>
+            </ul>
+        </dialog>
 
         <form id="chamberJoinForm" class="joinForm" method="get" action="thankyou.html">
             <fieldset>

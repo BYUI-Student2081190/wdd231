@@ -61,7 +61,7 @@
     }
 
     /* JOIN MAIN STYLE */
-    .joinModal h1 {
+    .joinModal h2:nth-child(1) {
         text-align: center;
     }
 
