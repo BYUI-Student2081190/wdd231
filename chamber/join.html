@@ -29,8 +29,65 @@
     <!-- JavaScript Links -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/joinForm.js" defer></script>
 </head>
 <body>
+    <!-- Modals Spot -->
+     <dialog id="noMemModal">
+        <h1>No Membership</h1>
+        <button id="noMemMoClose" type="button" aria-label="Close Modal Button">X</button>
+        <h2>Price:</h2>
+        <p>No Charge it's Free</p>
+        <h2>Benefits:</h2>
+        <ul>
+            <li>Buisness or Organization is part of the Chamber</li>
+            <li>Buisness or Organization can advertise at Chamber hosted events with a fee</li>
+        </ul>
+     </dialog>
+     <dialog id="broMemModal">
+        <h1>Bronze Membership</h1>
+        <button id="broMemMoClose" type="button" aria-label="Close Modal Button">X</button>
+        <h2>Price:</h2>
+        <p>$20 a month</p>
+        <h2>Benefits:</h2>
+        <ul>
+            <li>Buisness or Organization is part of the Chamber</li>
+            <li>Buisness or Organization can advertise at Chamber hosted events with a fee</li>
+            <li>Participate in Chamber trainings for buisnesses and organizations</li>
+            <li>Get 10% discount on advertisements at Chamber hosted events</li>
+        </ul>
+     </dialog>
+     <dialog id="silMemModal">
+        <h1>Silver Membership</h1>
+        <button id="silMemMoClose" type="button" aria-label="Close Modal Button">X</button>
+        <h2>Price:</h2>
+        <p>$40 a month</p>
+        <h2>Benefits:</h2>
+        <ul>
+            <li>Buisness or Organization is part of the Chamber</li>
+            <li>Buisness or Organization can advertise at Chamber hosted events with a fee</li>
+            <li>Participate in Chamber trainings for buisnesses and organizations</li>
+            <li>Get 20% discount on advertisements at Chamber hosted events</li>
+            <li>Buisness or Oranization gets free advertisements on Chamber site</li>
+            <li>Buisness or Organization can host their own trainings or events at Chamber Event Plaza</li>
+        </ul>
+     </dialog>
+     <dialog id="golMemModal">
+        <h1>Gold Membership</h1>
+        <button id="golMemMoClose" type="button" aria-label="Close Modal Button">X</button>
+        <h2>Price:</h2>
+        <p>$60 a month</p>
+        <h2>Benefits:</h2>
+        <ul>
+            <li>Buisness or Organization is part of the Chamber</li>
+            <li>Buisness or Organization can advertise at Chamber hosted events for free</li>
+            <li>Participate in Chamber trainings for buisnesses and organizations</li>
+            <li>Buisness or Oranization gets free advertisements on Chamber site</li>
+            <li>Buisness or Organization can host their own trainings or events at Chamber Event Plaza</li>
+            <li>Buisness or Organization can recieve a monthly training crafted for the buisness/organization from the Chamber</li>
+        </ul>
+     </dialog>
+
     <header>
 
         <section>
@@ -62,36 +119,66 @@
 
         <h1>Join the Chamber</h1>
 
-        <form class="joinForm" method="get" action="thankyou.html">
+        <form id="chamberJoinForm" class="joinForm" method="get" action="thankyou.html">
             <fieldset>
                 <legend>Contact Information</legend>
-                <label for="firstName">First Name: 
+                <label for="firstName">*First Name: 
                     <input name="firstName" id="firstName" type="text" title="Enter your first name. Example: Sarah" autocomplete="given-name" required>
                 </label>
-                <label for="lastName">Last Name: 
+                <label for="lastName">*Last Name: 
                     <input name="lastName" id="lastName" type="text" title="Enter your last name. Example: Brown" autocomplete="family-name" required>
                 </label>
-                <label for="orgTitle">Organizational Title: 
-                    <input name="orgTitle" id="orgTitle" type="text" title="Enter your organizational title. Example: Finance-Manager" autocomplete="organization-title" pattern="^[a-zA-Z\\-\\s]{7,}$" required>
+                <label for="orgTitle">*Organizational Title: 
+                    <input name="orgTitle" id="orgTitle" type="text" title="Enter your organizational title. Example: Must have at least 7 characters, only alpha character, and hyphens and spaces" autocomplete="organization-title" pattern="^[a-zA-Z -]{7,}$" required>
                 </label>
                 <p class="formNote">(Please only use alpha characters (a-z, A-Z), hyphens, and 7 spaces for Organizational Title.)</p>
-                <label for="email">Email: 
+                <label for="email">*Email: 
                     <input name="email" id="email" type="email" title="Enter your email. Example: sarahbrown@email.com" autocomplete="email" required>
                 </label>
-                <label for="phoneNum">Mobile Phone: 
+                <label for="phoneNum">*Mobile Phone: 
                     <input name="phoneNum" id="phoneNum" type="tel" title="Enter your mobile phone number. Example: 999-999-9999" autocomplete="mobile" required>
                 </label>
             </fieldset>
             <fieldset>
                 <legend>Organization Information</legend>
-                <label for="orgName">Buisness/Organization Name: 
+                <label for="orgName">*Buisness/Organization Name: 
                     <input name="orgName" id="orgName" type="text" title="Enter the name of your buisness or organization. Example: The Example Buisness" autocomplete="organization-title" required>
                 </label>
-                <div class="membership">
-                    <div class="membershipDisplay"></div>
-                    <p>Select a Membership:</p>
+                <div class="membershipDisplay">
+                    
+                    <div>
+                        <p>No Membership</p>
+                        <button id="noMemDetails" aria-label="No Membership Details Button" type="button">Details</button>
+                    </div>
+
+                    <div>
+                        <p>Bronze Membership</p>
+                        <button id="broMemDetails" aria-label="Bronze Membership Details Button" type="button">Details</button>
+                    </div>
+
+                    <div>
+                        <p>Silver Membership</p>
+                        <button id="siMemDetails" aria-label="Silver Membership Details Button" type="button">Details</button>
+                    </div>
+
+                    <div>
+                        <p>Gold Membership</p>
+                        <button id="goMemDetails" aria-label="Gold Membership Details Button" type="button">Details</button>
+                    </div>
+
                 </div>
+                <p>*Select a Membership:</p>
+                <div class="membershipSelect">
+                    <label for="noMemInput"><input id="noMemInput" name="membership" type="radio" value="0" required> No Membership</label>
+                    <label for="broMemInput"><input id="broMemInput" name="membership" type="radio" value="1" required> Bronze Membership</label>
+                    <label for="silMemInput"><input id="silMemInput" name="membership" type="radio" value="2" required> Silver Membership</label>
+                    <label for="golMemInput"><input id="golMemInput" name="membership" type="radio" value="3" required> Gold Membership</label>
+                </div>
+
+                <label for="buisnessDescript">Business/Organization Description: <textarea id="buisnessDescript" name="buisnessDescript" title="Please enter a brief description of your organization/buisness"></textarea></label>
             </fieldset>
+            <input type="hidden" id="formTimeStamp" name="formTimeStamp">
+            <button type="submit">Join Chamber</button>
         </form>
         
     </main>
