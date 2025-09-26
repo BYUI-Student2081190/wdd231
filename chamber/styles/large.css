@@ -60,6 +60,11 @@
         flex-grow: 1;
     }
 
+    /* JOIN MAIN STYLE */
+    .joinModal h1 {
+        text-align: center;
+    }
+
     /* FOOTER STYLE */
     footer {
         flex-direction: row;

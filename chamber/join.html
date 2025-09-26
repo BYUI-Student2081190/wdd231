@@ -33,7 +33,7 @@
 </head>
 <body>
     <!-- Modals Spot -->
-     <dialog id="noMemModal">
+     <dialog id="noMemModal" class="joinModal">
         <h1>No Membership</h1>
         <button id="noMemMoClose" type="button" aria-label="Close Modal Button">X</button>
         <h2>Price:</h2>
@@ -44,7 +44,7 @@
             <li>Buisness or Organization can advertise at Chamber hosted events with a fee</li>
         </ul>
      </dialog>
-     <dialog id="broMemModal">
+     <dialog id="broMemModal" class="joinModal">
         <h1>Bronze Membership</h1>
         <button id="broMemMoClose" type="button" aria-label="Close Modal Button">X</button>
         <h2>Price:</h2>
@@ -57,7 +57,7 @@
             <li>Get 10% discount on advertisements at Chamber hosted events</li>
         </ul>
      </dialog>
-     <dialog id="silMemModal">
+     <dialog id="silMemModal" class="joinModal">
         <h1>Silver Membership</h1>
         <button id="silMemMoClose" type="button" aria-label="Close Modal Button">X</button>
         <h2>Price:</h2>
@@ -72,7 +72,7 @@
             <li>Buisness or Organization can host their own trainings or events at Chamber Event Plaza</li>
         </ul>
      </dialog>
-     <dialog id="golMemModal">
+     <dialog id="golMemModal" class="joinModal">
         <h1>Gold Membership</h1>
         <button id="golMemMoClose" type="button" aria-label="Close Modal Button">X</button>
         <h2>Price:</h2>
@@ -131,7 +131,7 @@
                 <label for="orgTitle">*Organizational Title: 
                     <input name="orgTitle" id="orgTitle" type="text" title="Enter your organizational title. Example: Must have at least 7 characters, only alpha character, and hyphens and spaces" autocomplete="organization-title" pattern="^[a-zA-Z -]{7,}$" required>
                 </label>
-                <p class="formNote">(Please only use alpha characters (a-z, A-Z), hyphens, and 7 spaces for Organizational Title.)</p>
+                <p class="formNote">(Please only use alpha characters (a-z, A-Z), hyphens, and spaces for Organizational Title.)</p>
                 <label for="email">*Email: 
                     <input name="email" id="email" type="email" title="Enter your email. Example: sarahbrown@email.com" autocomplete="email" required>
                 </label>
@@ -167,7 +167,7 @@
                     </div>
 
                 </div>
-                <p>*Select a Membership:</p>
+                <p class="membershipInstruct">*Select a Membership:</p>
                 <div class="membershipSelect">
                     <label for="noMemInput"><input id="noMemInput" name="membership" type="radio" value="0" required> No Membership</label>
                     <label for="broMemInput"><input id="broMemInput" name="membership" type="radio" value="1" required> Bronze Membership</label>
@@ -178,7 +178,7 @@
                 <label for="buisnessDescript">Business/Organization Description: <textarea id="buisnessDescript" name="buisnessDescript" title="Please enter a brief description of your organization/buisness"></textarea></label>
             </fieldset>
             <input type="hidden" id="formTimeStamp" name="formTimeStamp">
-            <button type="submit">Join Chamber</button>
+            <button class="formSubButton" type="submit">Join Chamber</button>
         </form>
         
     </main>
