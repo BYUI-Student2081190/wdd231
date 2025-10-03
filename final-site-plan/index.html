@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Final Project Plan - Christopher Scott</title>
+    <meta name="author" content="Christopher Scott">
+    <meta name="description" content="Welcome! This is the plan for the final site for WDD231. This will explore the different attributes, elements, and features that will go into making the final site. This is a living document and will be updated as the project comes together.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- Scripts -->
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+<body>
+
+    <dialog id="scenarioOneDisplay">
+        <p class="scenarioTitle">How Can I Find A Game I Used To Play As A Kid?</p>
+        <button id="scenarioDisplayCloseOne" aria-label="Close Scenario Display">X</button>
+        <p class="scenarioAnswer">Our site plans to help with this problem by:</p>
+        <ul>
+            <li>Allowing users to search for different video games in our seach bar.</li>
+            <li>Allowing users to request to put old games they used to play in our database.</li>
+            <li>By taking these steps we ensure users can locate old games they want to remember.</li>
+        </ul>
+    </dialog>
+
+    <dialog id="scenarioTwoDisplay">
+        <p class="scenarioTitle">How Can I Help Contribute To The Archive?</p>
+        <button id="scenarioDisplayCloseTwo" aria-label="Close Scenario Display">X</button>
+        <p class="scenarioAnswer">Our site makes this really easy by:</p>
+        <ul>
+            <li>Giving users an easy to use form to help them submit a request.</li>
+            <li>By using the form and giving more information on the game you will help us locate it better.</li>
+            <li>Having it remain an active Archive where people can help upload and contribute makes the task smaller.</li>
+        </ul>
+    </dialog>
+
+    <header>
+        <span>Final Project Plan: My Video Game Archive</span>
+    </header>
+
+    <main>
+
+        <h1>WDD231 Final Project Plan</h1>
+
+        <section>
+            <h2>Site Name:</h2>
+            <p>
+                My Video Game Archive
+            </p>
+
+            <p class="sectionOneSpecialP"><b>Why This Name?</b></p>
+            <p>
+                This name was chosen because it displays what the site is for in a basic way.
+                Providing the user with a personal and effective video game archive that can be
+                updated to add games that they want to the site.
+            </p>
+        </section>
+
+        <section>
+            <h2>Site Purpose:</h2>
+            <p>
+                The goal of the site is to create a Video Game Archive that holds information on many different games from history.
+                The "My" part of this site emphasizes the ability we give users to edit their preferences on the site
+                and even add their own games upon request through a form submitted to the server. The goal is to provide
+                users with an interactive Video Game Archive where they can discover games from the past and present, allow
+                them to sort their favorite games, and ultimately serve as a tool to help them play new games or relive
+                nostalgic memories with games they grew up with.
+            </p>
+        </section>
+
+        <section class="scenarios">
+            <h2>Scenarios:</h2>
+            <div>
+                <p>Scenario One</p>
+                <button id="scenarioOneButton" aria-label="View Scenario One Button" type="button">Click to View</button>
+            </div>
+            <div>
+                <p>Scenario Two</p>
+                <button id="scenarioTwoButton" aria-label="View Scenario Two Button" type="button">Click to View</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Color Schema:</h2>
+            <div class="colorBlocks">
+                <div class="colorBlockSetUp">
+                    <div id="colorOne" class="block"></div>
+                    <p>Primary Color</p>
+                    <p>#77DD77</p>
+                </div>
+                <div class="colorBlockSetUp">
+                    <div id="colorTwo" class="block"></div>
+                    <p>Secondary Color</p>
+                    <p>#F5F5DC</p>
+                </div>
+                <div class="colorBlockSetUp">
+                    <div id="colorThee" class="block"></div>
+                    <p>Third Color</p>
+                    <p>#FF6961</p>
+                </div>
+                <div class="colorBlockSetUp">
+                    <div id="colorFour" class="block"></div>
+                    <p>Accent One Color</p>
+                    <p>#0D98BA</p>
+                </div>
+                <div class="colorBlockSetUp">
+                    <div id="colorFive" class="block"></div>
+                    <p>Accent Two Color</p>
+                    <p>#301934</p>
+                </div>
+                <div class="colorBlockSetUp">
+                    <div id="colorSix" class="block"></div>
+                    <p>Background (Default) Color</p>
+                    <p>#fff</p>
+                </div>
+                <div class="colorBlockSetUp">
+                    <div id="colorSeven" class="block"></div>
+                    <p>Black(Font) Color</p>
+                    <p>#090e16</p>
+                </div>
+                <div class="colorBlockSetUp">
+                    <div id="colorEight" class="block"></div>
+                    <p>Dark Mode Primary Color</p>
+                    <p>#161618</p>
+                </div>
+                <div class="colorBlockSetUp">
+                    <div id="colorNine" class="block"></div>
+                    <p>Dark Mode Secondary Color</p>
+                    <p>#F7F7F7</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Typography:</h2>
+            <p id="fontOne">
+                This font is <b>Jersey 15</b> it will be used on headers, and other title like elements.
+            </p>
+            <p>
+                This font is <b>Josefin Sans</b> it will be used on everything else on the site.
+            </p>
+        </section>
+
+        <section class="wireframes">
+            <h2>Wireframe (Home Page):</h2>
+            <div>
+                <p>Large:</p>
+                <img src="images/large-screen.jpg" alt="Large Home Plan" width="800" height="619">
+            </div>
+            <div>
+                <p>Small:</p>
+                <img src="images/small-screen.jpg" alt="Small Home Plan" width="800" height="1178">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>WDD231: Final Site Plan</p>
+        <p>&copy; <span id="currentYear"></span> - Christopher Scott - Utah, USA</p>
+        <p>Last Mod: <span id="modDate"></span></p>
+    </footer>
+
+</body>
+</html>
