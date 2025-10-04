@@ -23,12 +23,14 @@
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="styles/base.css">
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="styles/large.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     
     <!-- JavaScript Links -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
 </head>
 <body>
     <header>
@@ -58,8 +60,14 @@
 
     </header>
 
+    <aside>
+        <p id="visitMessage"></p>
+    </aside>
+
     <main>
         <h1>Discover</h1>
+
+        <section id="discoverSection" class="discoverGrid"></section>
     </main>
 
     <footer>

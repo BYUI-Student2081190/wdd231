@@ -35,6 +35,7 @@ header {
     padding: 5px 10px 5px 10px;
     border-bottom: 1px solid var(--text-color);
     background-color: var(--primary-color);
+    margin-bottom: 1.5rem;
 }
 
 header section {
@@ -101,6 +102,17 @@ header section span {
 
 .navigation a:hover {
     background-color: var(--secondary-color);
+}
+
+/* ASIDE STYLE */
+aside {
+    text-align: center;
+    width: 50%;
+    justify-self: center;
+    padding: 1fr 0;
+    margin: 2fr 0;
+    border: 1px solid var(--text-color);
+    border-radius: 50px;
 }
 
 /* MAIN STYLE */
@@ -532,6 +544,72 @@ main h1 {
     background-color: var(--secondary-color);
     border: 1px solid var(--text-color);
     border-radius: 0.25rem;
+}
+
+/* DISCOVER MAIN STYLE */
+.discoverError {
+    text-align: center;
+}
+
+.discoverGrid div {
+    margin: 1rem 10px;
+    padding: 0.8rem 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "descrip"
+    "location"
+    "button";
+}
+
+.discoverGrid div h2 {
+    grid-area: name;
+}
+
+.discoverGrid div figure {
+    grid-area: photo;
+    text-align: center;
+}
+
+.discoverGrid div figure img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 1px solid var(--text-color);
+}
+
+.discoverGrid div p {
+    grid-area: descrip;
+    text-align: center;
+}
+
+.discoverGrid div address {
+    grid-area: location;
+    text-align: center;
+}
+
+.discoverGrid div button {
+    grid-area: button;
+    width: 90%;
+    margin: 1rem 0;
+    padding: 0.5rem 10px;
+    justify-self: center;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.discoverGrid div button:hover {
+    background-color: var(--background-color);
 }
 
 /* FOOTER STYLE */

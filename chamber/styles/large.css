@@ -1,73 +1,9 @@
 /* LARGE SCREENS */
-@media only screen and (min-width: 38rem) {
-    /* COLOR SCHEME */
-    :root {
-        --primary-color: #FFDF00;
-        --secondary-color: #FFFFF0;
-        --highlight-color: #0047AB;
-        --background-color: #FFFF;
-        --text-color: #1E1E1E;
-    }
-
-    /* HEADER STYLE */
-    header {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    /* NAVIGATION STYLE */
-    .navigation {
-        display: block;
-    }
-
-    .navigation ul {
-        display: flex;
-        column-gap: 0.5rem;
-    }
-
-    .navigation li {
-        border-top: 0;
-    }
-
-    .navigation a.active {
-        text-decoration: underline;
-        background-color: var(--primary-color);
-    }
-
-    .navigation a:hover {
-        color: var(--secondary-color);
-        background-color: var(--primary-color);
-    }
-
-    /* HOME MAIN STYLE */
-    .homeTop {
-        flex-direction: row;
-    }
-
-    .homeMid {
-        flex-direction: row;
-    }
-
-    /* DIRECTORY MAIN STYLE */
-    .listMember p,
-    .listMember a {
-        font-size: 1.1rem;
-        flex-grow: 1;
-    }
-
-    /* JOIN MAIN STYLE */
-    .joinModal h2:nth-child(1) {
-        text-align: center;
-    }
-
-    /* FOOTER STYLE */
-    footer {
-        flex-direction: row;
-        justify-content: space-evenly;
+@media only screen and (min-width: 53rem)
+{
+    /* DISCOVER MAIN STYLE */
+    .discoverGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
