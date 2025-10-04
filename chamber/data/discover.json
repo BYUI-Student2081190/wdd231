@@ -1,0 +1,60 @@
+{
+    "interests":
+    [
+        {
+            "name": "Jordan River Temple",
+            "address": "10200 S Temple Dr, South Jordan, UT 84095",
+            "descript": "Come worship the Lord in this temple local to West and South Jordan. Dedicated on November 16, 1981.",
+            "image": "images/jordan-river-temple.webp"
+        },
+
+        {
+            "name": "Oquirrh Mountain Temple",
+            "address": "11022 S 4000 W, South Jordan, UT 84095",
+            "descript": "Come worship the Lord in this second temple where in West and South Jordan. Dedicated on August 21, 2009.",
+            "image": "images/oquirrh-mountain-temple.webp"
+        },
+
+        {
+            "name": "Gardner Village",
+            "address": "1100 W 7800 S, West Jordan, UT 84088",
+            "descript": "Come check out the shopping center that is Gardner Village. Here there are many events and things going on for the whole family.",
+            "image": "images/pioneer.webp"
+        },
+
+        {
+            "name": "Jordan Landing",
+            "address": "3751 W Center Park Dr, West Jordan, UT 84084",
+            "descript": "Here at the Jordan Landing Shoping District you can check out many different shops, and food spots that all are here. A great place for the family.",
+            "image": "images/mall.webp"
+        },
+
+        {
+            "name": "Viridian Events Center",
+            "address": "8030 S 1825 W, West Jordan, UT 84088",
+            "descript": "Not only is the Viridian a library but all sorts of events are hosted there. One very popular event that goes on here among teens and young adults is ToshoCon.",
+            "image": "images/library.webp"
+        },
+
+        {
+            "name": "Veterans Memorial Park",
+            "address": "17111 1700 W, Bluffdale, UT 84065",
+            "descript": "Here you can come and show some respect for those who have fought for our country. This is a perfect sport for Veterans Day, and Memorial Day.",
+            "image": "images/grave.webp"
+        },
+
+        {
+            "name": "Wild West Jordan Playground",
+            "address": "8000 S Redwood Rd, West Jordan, UT 84088",
+            "descript": "Here is a perfect spot for your kids to play and have fun. There are many things from a playground, to tennis courts, basketball courts, and even volleyball courts.",
+            "image": "images/memorial.webp"
+        },
+
+        {
+            "name": "Sierra Newbold Memorial Playground",
+            "address": "5900 New Bingham Hwy, West Jordan, UT 84081",
+            "descript": "Another park with a playground, splashpad, pickleball courts, and pavilions and tables. A great place for some summer fun with your kids and the whole family.",
+            "image": "images/park.webp"
+        }
+    ] 
+}
