@@ -109,8 +109,7 @@ aside {
     text-align: center;
     width: 50%;
     justify-self: center;
-    padding: 1fr 0;
-    margin: 2fr 0;
+    padding: 0.5rem 0;
     border: 1px solid var(--text-color);
     border-radius: 50px;
 }
