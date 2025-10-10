@@ -1,0 +1,57 @@
+@media only screen and (min-width: 38rem) {
+    /* SITE COLORS AND FONTS */
+    :root {
+        --primary-color: #77DD77;
+        --secondary-color: #F5F5DC;
+        --third-color: #FF6961;
+        --accent-one: #0D98BA;
+        --accent-two: #301934;
+        --site-white: #fff;
+        --site-black: #090e16;
+        --darkmode-background: #161618;
+        --darkmode-font: #F7F7F7;
+        --darkmode-accent-one: #FF5722;
+        --darkmode-accent-two: #F41E0A;
+        --darkmode-accent-three: #1368F4;
+        --darkmode-accent-four: #E2C81E;
+
+        --header-font: "Jersey 15", sans-serif;
+        --font-style: "Josefin Sans", sans-serif;
+    }
+
+    /* HEADER STYLE */
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        row-gap: 10px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        margin-top: 0;
+    }
+
+    .navigation li {
+        border: 1px solid var(--site-black);
+        box-shadow: 8px 8px 8px var(--site-black);
+    }
+
+    /* FOOTER STYLE */
+    footer {
+        flex-direction: row;
+    }
+}

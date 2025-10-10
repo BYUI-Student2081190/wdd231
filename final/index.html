@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Video Game Archive</title>
+    <title>My Video Game Archive - Home</title>
     <meta name="author" content="Christopher Scott">
     <meta name="description" content="Welcome to My Video Game Archive, here you can view a list of video games to help you find games that give you that nostalgia kick. Enjoy the memories and explore some games.">
     <!-- Social Meta Tags -->
-    <meta property="og:title" content="My Video Game Archive">
+    <meta property="og:title" content="My Video Game Archive - Home">
     <meta property="og:description" content="Welcome to My Video Game Archive, here you can view a list of video games to help you find games that give you that nostalgia kick. Enjoy the memories and explore some games.">
     <meta property="og:image" content="https://byui-student2081190.github.io/wdd231/final/images/video-game-controller.webp">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="350">
     <meta property="og:url" content="https://byui-student2081190.github.io/wdd231/final/index.html">
     <!-- Favicon -->
     <link rel="icon" href="images/my-video-game-archive-icon.ico">
@@ -18,14 +20,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Josefin+Sans&display=swap" rel="stylesheet">
     <!-- Style Sheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
     <!-- Scripts -->
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header>
 
-        <a href="index.html"><img src="images/my-video-game-archive-logo.webp" alt="My Video Game Archive Logo" width="300" height="300"></a>
-
         <section>
+            <a class="header-logo" href="index.html"><img src="images/my-video-game-archive-logo.webp" alt="My Video Game Archive Logo" width="300" height="300"></a>
             <span>My Video Game Archive</span>
             <button id="ham-btn" class="hamburger" aria-label="Toggle Nav"></button>
         </section>
@@ -46,7 +52,55 @@
 
     </header>
 
-    <main></main>
+    <!-- Hero Image Home -->
+    <section class="home-hero-image">
+        <img src="images/girls-playing-hero.webp" alt="Girls Playing Games" width="600" height="360">
+    </section>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <section class="home-main-section">
+
+            <div class="announcments">
+                
+                <h2>Announcements</h2>
+                
+                <ul>
+                    <li>We just had an update, new games added to database!</li>
+                    <li>New features coming soon, keep your eyes peeled. 👀</li>
+                    <li>Make sure to suggest games you want added to the database.</li>
+                </ul>
+
+            </div>
+
+            <div class="welcome-info">
+
+                <h2>Welcome!</h2>
+
+                <p>
+                    This site is called "My Video Game Archive". The goal behind the site
+                    is to give people an ability to look for games that they enjoyed back
+                    in the day, or allow people to discover games they did not know existed.
+                    This also allows users like you to suggest games you want to have added
+                    to the database. Then you can be an active participant in the site. That
+                    is where the "My" comes in. We host it, and it becomes part of your virtual
+                    library.
+                </p>
+
+                <a href="#">Suggest a Game!</a>
+
+            </div>
+
+            <div class="featured-game">
+                <h2>Featured Game:</h2>
+                <!-- Add more later -->
+            </div>
+
+        </section>
+
+    </main>
     
     <footer>
 
