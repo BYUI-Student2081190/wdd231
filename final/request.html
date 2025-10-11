@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Game Archive - Request</title>
+    <meta name="author" content="Christopher Scott">
+    <meta name="description" content="Welcome to request page, here you can request a game you want to have added to the database. We will process that request and add it if we feel like it belongs!">
+    <!-- Social Meta Tags -->
+    <meta property="og:title" content="My Video Game Archive - Request">
+    <meta property="og:description" content="Welcome to request page, here you can request a game you want to have added to the database. We will process that request and add it if we feel like it belongs!">
+    <meta property="og:image" content="https://byui-student2081190.github.io/wdd231/final/images/video-game-controller.webp">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="350">
+    <meta property="og:url" content="https://byui-student2081190.github.io/wdd231/final/request.html">
+    <!-- Favicon -->
+    <link rel="icon" href="images/my-video-game-archive-icon.ico">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- Scripts -->
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/request.js" defer></script>
+</head>
+<body>
+    <header>
+
+        <section>
+            <a class="header-logo" href="index.html"><img src="images/my-video-game-archive-logo.webp" alt="My Video Game Archive Logo" width="300" height="300"></a>
+            <span>My Video Game Archive</span>
+            <button id="ham-btn" class="hamburger" aria-label="Toggle Nav"></button>
+        </section>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="browse.html">Browse</a>
+                </li>
+                <li>
+                    <a class="active" href="request.html">Request</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <aside class="request-count">
+        <span id="requestCount"></span>
+    </aside>
+
+    <main>
+
+        <h1>Create a Game Request</h1>
+
+        <section class="request-main-section">
+
+            <form id="requestForm" class="request-form" method="get" action="thankyou.html">
+                
+                <fieldset>
+                    <legend>Game Information</legend>
+                    <label for="title">*Game Title:
+                        <input name="title" id="title" type="text" title="Enter the Game Title" required>
+                    </label>
+                    <label for="publisher">*Game Publisher:
+                        <input name="publisher" id="publisher" type="text" title="Enter the Game's Publisher" required>
+                    </label>
+                    <label for="releaseDate">Game Release Date<span class="optional">(optional)</span>:
+                        <input name="releaseDate" id="releaseDate" type="date" title="Enter the Game Release Date">
+                    </label>
+                    <label for="gameDescription">Game Description<span class="optional">(optional)</span>:
+                        <textarea name="gameDescription" id="gameDescription" title="Enter a Description of the Game"></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <span class="disclaimer">We collect this just in case we have any questions about the game you requested.</span>
+                    <label for="email">*Email: 
+                        <input name="email" id="email" type="email" title="Enter Your Email" required>
+                    </label>
+                    <label for="firstName">First Name<span class="optional">(optional)</span>:
+                        <input name="firstName" id="firstName" type="text" title="Enter Your First Name">
+                    </label>
+                    <label for="lastName">Last Name<span class="optional">(optional)</span>:
+                        <input name="lastName" id="lastName" type="text" title="Enter Your Last Name">
+                    </label>
+                </fieldset>
+
+                <button class="form-submit" type="submit">Make Request!</button>
+
+            </form>
+
+        </section>
+
+    </main>
+    
+    <footer>
+
+        <section class="socialIcons">
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter X" width="16" height="16"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="YouTube" width="16" height="16"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+        </section>
+
+        <section>
+            <p>WDD231 Final Project</p>
+            <p>Christopher Scott</p>
+            <p>&copy; <span id="currYear"></span> My Video Game Archive</p>
+            <p>Last Modification: <span id="lastMod"></span></p>
+        </section>
+
+    </footer>
+</body>
+</html>

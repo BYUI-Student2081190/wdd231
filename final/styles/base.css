@@ -133,6 +133,11 @@ header section {
     text-decoration: underline;
 }
 
+/*MAIN STYLE*/
+main {
+    margin: 10px 2rem;
+}
+
 /* MAIN HOME STYLE */
 .home-hero-image {
     display: block;
