@@ -324,7 +324,7 @@ main h1 {
 
 .optional {
     margin-bottom: 0;
-    color: var(--darkmode-accent-two);
+    color: #300404;
     font-size: 0.7rem;
     font-style: italic;
 }
