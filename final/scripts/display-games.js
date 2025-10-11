@@ -16,6 +16,9 @@ if (!data) {
     p.textContent = "There was an error getting data from our database, this is on our end and we are working to fix it. Please come back later!";
     container.appendChild(p);
 } else {
+    // Create a count to check for when lazy should be applied
+    let counter = 0;
+
     // Data is good and we can use it to populate the page
     data.videogamedata.forEach(game => {
         // Create the cards for each game and edit them as seen fit
@@ -29,7 +32,10 @@ if (!data) {
         img.setAttribute("alt", `Image of ${game.title}`);
         img.setAttribute("width", 300);
         img.setAttribute("height", 300);
-        // Add lazyload here later...
+        // Add lazy load if counter is bigger than one
+        if (counter > 1) {
+            img.setAttribute("loading", "lazy");
+        };
 
         title.textContent = game.title;
 
@@ -39,7 +45,7 @@ if (!data) {
         // Add an event listener to the button to open the modal
         button.addEventListener("click", () => {
             // Create the elements inside the modal and then open it
-            const detailsTitle = document.createElement("span");
+            const detailsTitle = document.createElement("p");
             const detailsImg = document.createElement("img");
             const desc = document.createElement("p");
             const genre = document.createElement("p");
@@ -108,5 +114,8 @@ if (!data) {
 
         // Add the card to the container
         container.appendChild(card);
+
+        // Add one to the counter
+        counter += 1;
     });
 };

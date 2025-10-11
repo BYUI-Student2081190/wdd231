@@ -111,9 +111,7 @@ header section {
     text-align: center;
     width: 100%;
     background-color: var(--primary-color);
-    border: 1px solid var(--site-black);
-    border-left: 0;
-    border-right: 0;
+    border-top: 1px solid var(--site-black);
 }
 
 .navigation a {
@@ -135,7 +133,13 @@ header section {
 
 /*MAIN STYLE*/
 main {
-    margin: 10px 2rem;
+    margin: 2rem;
+    max-width: 900px;
+    justify-self: center;
+}
+
+main h1 {
+    text-align: center;
 }
 
 /* MAIN HOME STYLE */
@@ -151,6 +155,224 @@ main {
     border-left: 1px solid var(--site-black);
     border-right: 1px solid var(--site-black);
     border-bottom: 1px solid var(--site-black);
+}
+
+.home-main-section {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.home-main-section > div {
+    padding: 10px 10px 20px 10px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--site-black);
+    border-radius: 10px;
+}
+
+.home-main-section > div h2 {
+    margin-top: 0;
+}
+
+.announcments h2 {
+    text-align: center;
+}
+
+.announcments ul {
+    padding-left: 20px;
+}
+
+.announcments li {
+    margin: 15px 0;
+}
+
+.welcome-info {
+    grid-area: topright;
+    text-align: center;
+}
+
+.welcome-info p {
+    margin-bottom: 2rem;
+}
+
+.welcome-info a {
+    text-decoration: none;
+    padding: 0.8rem;
+    background-color: var(--third-color);
+    color: var(--site-black);
+    border: 1px solid var(--site-black);
+    border-radius: 1rem;
+}
+
+.welcome-info a:hover {
+    background-color: var(--site-white);
+}
+
+.featured-game {
+    grid-area: bottomright;
+    text-align: center;
+}
+
+.featured-game img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border: 1px solid var(--site-black);
+    margin-bottom: 10px;
+}
+
+/* MAIN BROWSE STYLE */
+.videogame-Container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.videogame-Container div {
+    padding: 15px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--site-black);
+    border-radius: 0.8rem;
+}
+
+.videogame-Container img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border: 1px solid var(--site-black);
+}
+
+.videogame-Container button {
+    background-color: var(--third-color);
+    color: var(--site-black);
+    border: 1px solid var(--site-black);
+    border-radius: 1rem;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.videogame-Container button:hover {
+    background-color: var(--site-white);
+}
+
+.game-details {
+    border: 1px solid var(--site-black);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: var(--site-white);
+    box-shadow: 0 0 3rem var(--site-black);
+    width: 90%;
+    max-width: 600px;
+}
+
+.game-details::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.game-details button {
+    padding: 1rem 0.9rem;
+    position: absolute;
+    font-size: 2rem;
+    top: 10px;
+    right: 10px;
+    color: var(--darkmode-accent-two);
+    border: none;
+    background-color: var(--site-white);
+    cursor: pointer;
+    font-family: var(--header-font);
+}
+
+.details-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.game-details img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 2rem;
+    height: auto;
+    border: 1px solid var(--site-black);
+    justify-self: center;
+}
+
+.game-details p {
+    text-align: center;
+}
+
+/* MAIN REQUEST STYLE */
+.request-count {
+    justify-self: center;
+    margin: 2rem 0;
+    padding: 0.8rem;
+    border: 1px solid var(--site-black);
+    border-radius: 2rem;
+}
+
+.request-form fieldset {
+    margin: 1rem 0;
+}
+
+.request-form label {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.optional {
+    margin-bottom: 0;
+    color: var(--darkmode-accent-two);
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.disclaimer {
+    margin: 1rem 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.request-form input,
+.request-form textarea {
+    margin: 0.6rem 0;
+    padding: 0.8rem;
+}
+
+.request-form input:required:not(:valid) {
+    border-left: 5px solid var(--darkmode-accent-two);
+}
+
+.request-form input:required:valid {
+    border-left: 5px solid var(--primary-color);
+}
+
+.request-form textarea {
+    resize: vertical;
+}
+
+.form-submit {
+    display: block;
+    justify-self: center;
+    margin-top: 2rem;
+    padding: 0.8rem;
+    background-color: var(--third-color);
+    color: var(--site-black);
+    border: 1px solid var(--site-black);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: var(--site-white);
+}
+
+/* MAIN THANKYOU STYLE */
+.thankyou-main-section {
+    text-align: center;
+    margin: 2rem 0;
 }
 
 /* FOOTER STYLE */

@@ -61,7 +61,7 @@
 
         <h1>Create a Game Request</h1>
 
-        <section class="request-main-section">
+        <section>
 
             <form id="requestForm" class="request-form" method="get" action="thankyou.html">
                 
@@ -73,24 +73,24 @@
                     <label for="publisher">*Game Publisher:
                         <input name="publisher" id="publisher" type="text" title="Enter the Game's Publisher" required>
                     </label>
-                    <label for="releaseDate">Game Release Date<span class="optional">(optional)</span>:
+                    <label for="releaseDate"><p class="optional">(Optional)</p>Game Release Date:
                         <input name="releaseDate" id="releaseDate" type="date" title="Enter the Game Release Date">
                     </label>
-                    <label for="gameDescription">Game Description<span class="optional">(optional)</span>:
+                    <label for="gameDescription"><p class="optional">(Optional)</p>Game Description:
                         <textarea name="gameDescription" id="gameDescription" title="Enter a Description of the Game"></textarea>
                     </label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Contact Info</legend>
-                    <span class="disclaimer">We collect this just in case we have any questions about the game you requested.</span>
+                    <p class="disclaimer">We collect this just in case we have any questions about the game you requested.</p>
                     <label for="email">*Email: 
                         <input name="email" id="email" type="email" title="Enter Your Email" required>
                     </label>
-                    <label for="firstName">First Name<span class="optional">(optional)</span>:
+                    <label for="firstName"><p class="optional">(Optional)</p>First Name:
                         <input name="firstName" id="firstName" type="text" title="Enter Your First Name">
                     </label>
-                    <label for="lastName">Last Name<span class="optional">(optional)</span>:
+                    <label for="lastName"><p class="optional">(Optional)</p>Last Name:
                         <input name="lastName" id="lastName" type="text" title="Enter Your Last Name">
                     </label>
                 </fieldset>

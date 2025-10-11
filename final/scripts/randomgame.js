@@ -12,8 +12,6 @@ function getRandomIndex(dataLength) {
     const min = 0;
     const max = Math.floor(dataLength - 1); // Subtract 1 so it is the real amount of indexes
 
-    console.log(max);
-
     // return the random number
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
@@ -42,6 +40,7 @@ if (!data) {
     img.setAttribute("alt", `Image of ${game.title}`);
     img.setAttribute("width", 300);
     img.setAttribute("height", 300);
+    img.setAttribute("loading", "lazy");
 
     // Add the title and img to the card
     card.appendChild(title);

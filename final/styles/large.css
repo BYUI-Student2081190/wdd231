@@ -50,6 +50,37 @@
         box-shadow: 8px 8px 8px var(--site-black);
     }
 
+    /* MAIN HOME STYLE */
+    .home-main-section {
+        display: grid;
+        grid-template-areas: 
+        "left topright"
+        "left bottomright";
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .announcments {
+        grid-area: left;
+    }
+
+    .welcome-info {
+        grid-area: topright;
+    }
+
+    .featured-game {
+        grid-area: bottomright;
+    }
+
+    /* MAIN BROWSE STYLE */
+    .videogame-Container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20%;
+        row-gap: 1rem;
+    }
+
+
     /* FOOTER STYLE */
     footer {
         flex-direction: row;
