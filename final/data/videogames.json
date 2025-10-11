@@ -1,0 +1,184 @@
+{
+    "videogamedata":
+    [
+        {
+            "title": "Alien Shoot Out",
+            "image": "images/alien-shoot-out.jpg",
+            "description": "Shoot all the aliens and keep the planet Earth safe. This game was created as a basic start up game for Feliworks.",
+            "genre": "Shooting",
+            "players": 1,
+            "ageRating": "E",
+            "publisher": "Feliworks",
+            "developer": "Feliworks",
+            "releaseDate": "March 19, 1983"
+        },
+
+        {
+            "title": "Battle Time",
+            "image": "images/battle-time.jpg",
+            "description": "Battle Time the retro 1990's tactical first person shooter built to play with stealth and shooting.",
+            "genre": "Stealth",
+            "players": 1,
+            "ageRating": "M",
+            "publisher": "Kokonami",
+            "developer": "Kokonami",
+            "releaseDate": "September 3, 1998"
+        },
+
+        {
+            "title": "Berry's Adventure",
+            "image": "images/berrys-adventure.jpg",
+            "description": "This game was on the early Playstation with it's cutting edge 3D platforming graphics for the era. This game got awards for it's creative machanics.",
+            "genre": "Platformer",
+            "players": 1,
+            "ageRating": "E",
+            "publisher": "Wayword",
+            "developer": "Wayword",
+            "releaseDate": "January 3, 1995"
+        },
+
+        {
+            "title": "Dead West",
+            "image": "images/dead-west.jpg",
+            "description": "Released on PC, it had an online multiplayer mode which is what drew most of it's fame. Not the best in graphics, but it made up for it in gameplay.",
+            "genre": "Shooting",
+            "players": 1,
+            "ageRating": "M",
+            "publisher": "Wayword",
+            "developer": "Wayword",
+            "releaseDate": "March 23, 2001"
+        },
+
+        {
+            "title": "Elephant Party",
+            "image": "images/elephant-party.jpg",
+            "description": "Elephant Party was a simple mini-game based party game for all ages. It had a way with ruining friendships with it's compeditive nature, while also recoving hurt feelings enough to keep friends coming back.",
+            "genre": "Party",
+            "players": 4,
+            "ageRating": "E",
+            "publisher": "Happy Software",
+            "developer": "Happy Software",
+            "releaseDate": "June 10, 1999"
+        },
+
+        {
+            "title": "Fist of Power",
+            "image": "images/fist-of-power.jpg",
+            "description": "Fist of power is an early era brawler. It's one of the least known brawlers from the 80's but it is a clever little game.",
+            "genre": "Fighting",
+            "players": 2,
+            "ageRating": "E10+",
+            "publisher": "Happy Software",
+            "developer": "Happy Software",
+            "releaseDate": "October 10, 1986"
+        },
+
+        {
+            "title": "Happy Brain: Education Games",
+            "image": "images/happy-brain.jpg",
+            "description": "This game was made to help kids learn basic english, math, and history skills. Made in the 90's and has aged very well over the years.",
+            "genre": "Learning",
+            "players": 1,
+            "ageRating": "E",
+            "publisher": "Happy Software",
+            "developer": "Happy Software",
+            "releaseDate": "April 15, 1995"
+        },
+
+        {
+            "title": "Let There Be Pirates",
+            "image": "images/let-there-be-pirates.jpg",
+            "description": "This game was made back in the 80's it was a creative mesh of puzzle and combat styled games.",
+            "genre": "Puzzle",
+            "players": 1,
+            "ageRating": "E",
+            "publisher": "Colorco.",
+            "developer": "Lancesoft",
+            "releaseDate": "July 9, 1987"
+        },
+
+        {
+            "title": "Life of a Samurai",
+            "image": "images/life-of-a-samurai.jpg",
+            "description": "With it's cutting edge graphics and intense gameplay, this game is a epic action adventure and historic simulation that is realistic and fun.",
+            "genre": "Action, Simulation",
+            "players": 1,
+            "ageRating": "T",
+            "publisher": "Kokonami",
+            "developer": "Historic Games",
+            "releaseDate": "August 12, 2025"
+        },
+
+        {
+            "title": "My Tale",
+            "image": "images/my-tale.jpg",
+            "description": "My Tale is a game made in the 90's for PC. It is a game that features a deep story only if you look closely at it. On a first playthrough you will not notice everything making this game a game played again and again.",
+            "genre": "RPG",
+            "players": 1,
+            "ageRating": "T",
+            "publisher": "Happy Software",
+            "developer": "Chimp Inc.",
+            "releaseDate": "March 2, 1994"
+        },
+
+        {
+            "title": "Ninja Story",
+            "image": "images/ninja-story.jpg",
+            "description": "This game was made to create a fun hack and slash adventure that also allowed players to jump and climb. This game plays very well and is a great game for any collection.",
+            "genre": "Action",
+            "players": 1,
+            "ageRating": "T",
+            "publisher": "Colorco.",
+            "developer": "Chimp Inc.",
+            "releaseDate": "April 9, 2006"
+        },
+
+        {
+            "title": "RPG Game",
+            "image": "images/rpg-game.jpg",
+            "description": "Though the name sounds like the game is not much, it is a game that is very deep for looking so simple. Taking a lot of inspiration from My Tale. This game is a lot of fun and proves that single developers can make AAA quality games.",
+            "genre": "RPG",
+            "players": 1,
+            "ageRating": "E",
+            "publisher": "Mark Smith",
+            "developer": "Mark Smith",
+            "releaseDate": "November 15, 2014"
+        },
+
+        {
+            "title": "Soldier",
+            "image": "images/soldier.jpg",
+            "description": "This game was based on WWII, and is a strategy game made to simulate battles from WWII.",
+            "genre": "Strategy",
+            "players": 1,
+            "ageRating": "E10+",
+            "publisher": "Colorco.",
+            "developer": "Colorco.",
+            "releaseDate": "May 4, 1985"
+        },
+
+        {
+            "title": "Who Is That?",
+            "image": "images/who-is-that.jpg",
+            "description": "Who Is That? Is a game following the 90's horror game trend. It takes a lot of elements from games like Silent Hill and Resident Evil. It's dark and scary... perfect for nights alone in the dark.",
+            "genre": "Horror",
+            "players": 1,
+            "ageRating": "M",
+            "publisher": "Colorco.",
+            "developer": "Colorco.",
+            "releaseDate": "October 31, 1999"
+        },
+
+        {
+            "title": "Witch Tales",
+            "image": "images/witch-tales.jpg",
+            "description": "Witch Tales is an old game that is sweet and fun. It was at first a arcade cabinet, but later got a port to the Super Nintendo. Since it's release it has sit with nothing going for it.",
+            "genre": "Platformer",
+            "players": 2,
+            "ageRating": "E",
+            "publisher": "Happy Software",
+            "developer": "Happy Software",
+            "releaseDate": "October 20, 1984"
+        }
+    ]
+}
